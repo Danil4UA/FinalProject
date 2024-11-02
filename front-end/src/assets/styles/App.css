@@ -1,0 +1,985 @@
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+
+  /* background-image: url("./background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+#root {
+  margin: auto;
+}
+
+.appbar {
+  background-color: white;
+}
+/* Authentication */
+.auth-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+
+.auth-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  padding: 2rem;
+  background-color: white;;
+  position: relative;
+}
+
+
+.auth-form form {
+  display: flex;
+  gap: 60px;
+  flex-direction: column;
+  width: 370px;
+  padding: 3rem;
+  background-color: white;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+
+.auth-image {
+  /* position: "fixed";
+  top: 0;       
+  right: 0;
+  z-index: 1000;  */
+  width: 40%;
+  background-image: url("./ICDm7YROT822shH1ZmXylg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+button {
+  margin-top: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+/* About */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 24px;
+  width: 1200px;
+  margin: auto
+
+}
+
+.about-title {
+  font-weight: bold;
+  margin-bottom: 16px;
+  font-size: 36px;
+}
+
+.about-description {
+  margin-bottom: 24px;
+}
+
+.about-icons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.about-caption {
+  margin-bottom: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Contact.css */
+.contact-container {
+  height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+    gap: 70px;
+    width: 1200px;
+    margin: auto;
+}
+
+.contact-info {
+    max-width: 400px;
+}
+
+.contact-info h2 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.contact-email {
+    background-color: #f7f7f7;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.contact-email a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-form {
+    width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer; 
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Manage Posts */
+
+.manage-account {
+  position: relative;
+  width: 100%;
+}
+
+
+.manage-account-container {
+  /* position: relative; */
+  padding: 30px 0;
+}
+
+
+.search-container {
+  display: flex;
+  gap: 16px; /* Используем gap для расстояния между элементами */
+  margin-bottom: 24px; /* Отступ снизу */
+  border-bottom: 1px solid rgb(233, 233, 233); 
+  padding: 16px 24px; /* Внутренний отступ */
+}
+
+.search-input {
+  max-width: 300px;
+  background-color: rgb(233, 233, 233);
+  color: #262324;
+
+}
+.search-input-container {
+  position: relative; /* Для позиционирования иконки */
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px; /* Отступ слева */
+  top: 50%; /* Центр по вертикали */
+  transform: translateY(-50%); /* Центрирование иконки */
+  color: #aaa; /* Цвет иконки */
+}
+
+
+
+/* Стиль для FormControl */
+.custom-form-control {
+  max-width: 300px;
+}
+
+/* Стиль для Select */
+.custom-select {
+  background-color: rgb(233, 233, 233);
+  border-radius: 7px;
+  color: #262324;
+}
+
+/* Можно добавить дополнительные стили для состояния наведения и фокуса */
+.custom-select:hover {
+  background-color: #f5f5f5; /* Светлый фон при наведении */
+}
+
+.custom-select:focus {
+  outline: none;
+}
+
+
+
+
+
+
+
+/* Search Filter */
+
+.search-container {
+  gap: 16px; /* Отступы между элементами */
+}
+
+.custom-input {
+  box-sizing: border-box;
+  border: none;
+  border-radius: 10px;
+  width: 200px;
+  background-color: rgb(245, 245, 245);
+  padding: 10px 10px 10px 35px;
+}
+
+.custom-input:focus {
+    outline: none;
+}
+
+.custom-select {
+  padding: 10px 10px;
+  width: 200px;
+  border: none;
+  background-color: rgb(245, 245, 245);
+}
+
+.custom-select:focus {
+  outline: none;
+}
+
+
+
+
+
+
+
+
+
+.delete-button {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  z-index: 1000;
+  color: white;
+  background-color: red;
+  border: none;
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+
+
+
+
+
+
+
+
+/* Generate Post */
+
+
+
+
+
+.generate-post-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Две колонки одинаковой ширины */
+  /* gap: 20px; Пространство между колонками */
+  margin: 0;
+  width: 100%;
+  /* background-color: rgb(245, 245, 245); */
+  /* max-width: 1600px; */
+}
+
+/** Post Result */
+.post-result{
+  background-color: rgb(245, 245, 245);
+  box-sizing: border-box;
+  height: 90vh;
+  padding: 0 24px;
+ 
+
+} 
+.post-result-content {
+  background-color: white;
+  min-height: 600px;
+  max-width: 550px;
+/* display: flex;
+justify-content: center;
+align-items: center; */
+  /* margin: 24px 36px; */
+  /* margin: auto; */
+  margin: auto;
+  margin-top: 24px;
+  border-radius: 10px;
+  padding: 24px;
+}
+   
+.post-result-icons {
+  margin: auto;
+  margin-top: 20px;
+}
+
+
+
+/* Generate Form */
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+  background-color: #ffffff;
+  max-height: 564px;
+  max-width: 550px;
+  margin: auto;
+  margin-top: 0;
+}
+
+.form-textfield {
+  background-color: rgb(245, 245, 245);
+
+}
+
+.form-select-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-evenly; */
+  gap: 10px;
+}
+
+
+
+.generate-post-select{
+  /* display: inline-block;
+  color  */
+  font-size: 18px;
+  padding: 8px 16px;
+}
+
+
+
+
+
+
+.form-submit-button {
+  margin-top: 16px;
+}
+
+
+
+
+.tone-selector {
+  margin-bottom: 16px;
+}
+
+/* Заголовок выбора тона */
+.tone-title {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Контейнер для кнопок выбора тона */
+.tone-buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Стили кнопок выбора тона */
+.tone-button {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  font-size: 18px;
+  border: 1px solid rgb(223, 223, 223);
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 7px;
+}
+
+.tone-button:hover {
+  background-color: #f5f5f5;
+}
+
+/* Индикатор (круглый чекбокс) слева от текста */
+.tone-indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid rgb(223, 223, 223);
+  margin-right: 8px;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.tone-indicator.active {
+  background-color: black;
+  border: 2px solid black;
+
+}
+
+.tone-button.selected {
+  border: 1px solid rgb(83, 82, 82);
+}
+
+
+
+
+
+
+.post-title {
+  margin-bottom: 16px;
+}
+
+.post-paragraph {
+  text-align: left;
+  /* padding: 15px; */
+}
+
+
+
+
+/* Iphone */
+
+
+
+
+
+/* 
+.post-editor-container {
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 30px;
+  gap: 15px;
+}
+
+.post-editor-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+} */
+
+.post-editor-buttons {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.upload-btn,
+.save-btn,
+.publish-btn {
+  width: 180px;
+}
+
+.publish-btn {
+  width: 200px;
+}
+
+.post-editor-image {
+  position: relative;
+  max-width: 450px;
+}
+
+.post-image {
+  max-width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.delete-button {
+  padding: 10px 20px;
+  background-color: #f44336; /* Красный цвет для удаления */
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.delete-button:hover {
+  background-color: #d32f2f; /* Немного темнее при наведении */
+  transform: scale(1.05);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.delete-button:disabled {
+  background-color: #e57373; /* Светло-красный для отключенной кнопки */
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+
+
+
+/* Aside Bar */
+
+.logo {
+  background-image: url("./logoAI.png");
+  background-size: cover;
+  height: 45px;
+  width: 110px;
+}
+
+.side-bar {
+  color: #262324;
+  font-size: 14px;
+  width: 220px;
+  padding: 16px 0;
+  box-sizing: border-box;
+  border-right: 1px solid rgb(233, 233, 233);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: white;
+
+  
+  transition: width 0.3s;
+}
+.side-bar.collapsed {
+  width: 68px; 
+  align-items: center;
+  padding-top: 26px
+}
+
+.pages {
+  display: flex;
+  flex-direction: column; 
+  align-items: stretch; 
+}
+
+.page-button {
+  display: flex; 
+  align-items: center; 
+  padding: 15px; 
+  text-decoration: none; 
+  color: inherit; 
+  background: transparent; 
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.page-button:hover {
+  background-color: rgba(0, 0, 0, 0.05); 
+  border-right: 3px solid rgb(97, 96, 96); 
+  border-radius: 3px;
+}
+
+
+
+
+/* Profile */
+.profile {
+  padding: 16px 16px 0 16px;
+  border-top: 1px solid rgb(233, 233, 233);
+  display: flex;
+  align-items: center ;
+}
+
+.profile-picture {
+  box-sizing: border-box;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-image: url("./profile_photo_default.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.profile-name {
+  padding-left: 16px;
+  width: 100px;
+  font-size:14px;
+  font-weight: 600;
+
+}
+
+.settings-icon {
+  font-size: 32px; /* Размер иконки */
+  padding: 4px;
+}
+
+.settings-icon:hover {
+  background-color: rgb(241, 241, 241); 
+  border-radius: 5px;
+}
+
+/*User Info*/
+.user-info {
+  position: absolute; 
+  bottom: 50px;
+  left: 164px;
+  min-width: 340px; 
+  background-color: white; 
+  border: 1px solid rgb(241, 241, 241); 
+  border-radius: 10px;
+  /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  */
+  padding: 10px; /* Отступы внутри */
+  z-index: 1000; /* Чтобы он был сверху других элементов */
+}
+
+
+
+.user-info-top {
+  padding: 8px;
+  box-sizing: border-box;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.profile-user-data p {
+  padding: 0;
+  margin: 0;
+}
+.user-info-bottom {
+  border-top:1px solid rgb(241, 241, 241);
+  
+}
+.user-info-bottom div {
+  padding: 8px;
+}
+
+.logout-button {
+  color: red;
+  border: none;
+  background-color: white;
+  width: 100%;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* Post Editor Left*/
+
+.refine-post-container {
+  box-sizing: border-box;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  height: 90vh;
+  justify-content: space-between;
+
+}
+
+
+.content-input .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+  border-color: #f7f7f7; /* Светло-серый цвет по умолчанию */
+}
+
+
+.content-input .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #f7f7f7; /* Светло-серый при наведении */
+}
+
+.content-input .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #f7f7f7; /* Светло-серый при фокусе */
+}
+
+.content-input .MuiOutlinedInput-root:active .MuiOutlinedInput-notchedOutline {
+  border-color: #f7f7f7; /* Светло-серый при нажатии */
+}
+
+.content-input .MuiOutlinedInput-root {
+  box-shadow: none; /* Убираем тень во всех состояниях */
+}
+
+
+.user-request-input {
+  padding: 12px 24px;
+  border: none;
+  background-color: #f7f7f7;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+}
+
+.user-request-input:focus {
+  box-shadow: 0 0 2px #e7e6e6; /* добавляет легкую тень при фокусе (опционально) */
+}
+
+.refine-post-button {
+  padding: 10px 16px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  background-color: #0056b3;
+}
+
+.refine-post-button:disabled {
+  background-color: #0056b3;
+  cursor: not-allowed;
+  margin: 0;
+}
+
+/* .refine-post-button:not(:disabled):hover {
+  background-color: #0056b3;
+} */
+
+
+
+
+
+/* Post Editor Right*/
+
+/* Основной контейнер для редактора поста */
+.post-editor-container {
+  margin: 0;
+  /* display: flex; */
+  width: 100%;
+  /* max-width: 1600px; */
+}
+
+/* Контейнер для основного содержимого редактора */
+.post-editor-content {
+  display: flex;
+  
+}
+
+/* Левая часть редактора поста */
+.post-editor-left {
+  flex: 1;
+  /* padding: 24px; */
+  /* min-width: 450px; */
+  /* width: 600px; */
+}
+
+/* Загрузчик изображения */
+.post-image-uploader {
+  margin-bottom: 20px;
+}
+
+/* Кнопки сохранения и публикации */
+.post-editor-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+/* Правая часть с iPhone Mockup */
+
+.post-editor-right {
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 20px 40px;
+  background-color: #f4f4f4;
+  height: 91vh;
+}
+
+
+.button {
+  padding: 8px 16px;
+  margin: 0;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Стили для кнопки сохранения */
+.primary-button {
+  background-color: #0056b3; /* Пример цвета для primary */
+  color: #fff;
+  margin-right: 8px; /* Место под аналогичный `sx={{ mr: 1 }}` */
+}
+
+.primary-button:hover:enabled {
+  background-color: #115293;
+}
+
+/* Стили для кнопки публикации */
+.secondary-button {
+  background-color: #0056b3; /* Пример цвета для secondary */
+  color: #fff;
+}
+
+.secondary-button:hover:enabled {
+  background-color: #9a0007;
+}
+
+
+.device-icons-container {
+  width: 100px;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding:  5px 10px;
+  border-radius: 5px; /* Немного округленные углы */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Легкая тень */
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+/* Кнопка настроек */
+.settings-button {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+.settings-button:hover {
+  background-color: rgb(245, 245, 245);
+  border-radius: 5px;
+}
+
+/* Затемнение фона */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+/* Боковая панель */
+.settings-panel {
+  position: fixed;
+  top: 0;
+  right: -800px; /* Начальная позиция панели за пределами экрана */
+  width: 800px;
+  height: 100vh;
+  background: white;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+  z-index: 20;
+  transition: right 0.3s ease;
+  box-sizing: border-box;
+
+}
+
+/* Позиция панели при открытии */
+.settings-panel.open {
+  right: 0; /* Панель выезжает на экран */
+  padding: 0;
+  color: #262324;
+}
+
+
+
+
+
+
+
+
+
+.settings-panel-nav {
+  display: flex;
+  border-bottom: 1px solid rgb(231, 231, 231);
+  list-style-type: none;
+  padding: 0;
+  margin: 0 24px;
+}
+.settings-panel-nav li {
+  padding: 12px 16px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.settings-panel-nav li:hover {
+  border-bottom: 2px solid black; /* При наведении становится видимым */
+
+  /* font-weight: 600; Делаем текст жирнее при наведении */
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .generate-post-container {
+    grid-template-columns: 1fr; /* Одна колонка на мобильных */
+  }
+}

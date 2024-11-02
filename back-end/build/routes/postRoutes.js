@@ -1,0 +1,21 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = __importDefault(require("express"));
+const verifyToken_1 = require("../middlewares/verifyToken");
+const postControllers_1 = require("../controllers/postControllers");
+const postControllers_2 = require("../controllers/postControllers");
+const uploadMiddleware_1 = require("../middlewares/uploadMiddleware");
+const router = express_1.default.Router();
+router.get("/all", verifyToken_1.verifyAccessToken, postControllers_1.postControllers.getAllPostsByUserId);
+router.get("/:id", verifyToken_1.verifyAccessToken, postControllers_1.postControllers.getPostById);
+router.put("/edit/:id", verifyToken_1.verifyAccessToken, uploadMiddleware_1.upload.single('file'), postControllers_2.updatePost);
+router.post("/refine", postControllers_1.postControllers.refinePost);
+router.post("/create", verifyToken_1.verifyAccessToken, postControllers_1.postControllers.createPost);
+router.post("/publish/instagram", verifyToken_1.verifyAccessToken, postControllers_1.postControllers.publishToInstagram);
+router.post("/publish/facebook", verifyToken_1.verifyAccessToken, postControllers_1.postControllers.publishToFacebook);
+router.put("/publish/:id", verifyToken_1.verifyAccessToken, postControllers_1.postControllers.publishPost);
+router.delete("/:id", verifyToken_1.verifyAccessToken, postControllers_1.postControllers.deletePostById);
+exports.default = router;
